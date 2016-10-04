@@ -13,34 +13,36 @@ b) La suma total de los saldos acreedores. */
 
 	var numCta= 0;
 	var saldoActual= 0;
-	var nombreCliente= prompt("Introduce el nombre del cliente: ");
-	var numCta= prompt("Introduce el numero de la cuenta: ");
-	var saldoActual= prompt("Introduce el saldo: ")
-	if (saldoActual < 0){
-		console.log("Estado de la cuenta: Deudor");
-		
-	}ifelse(saldoActual = 0){
-		console.log("Estado de la cuenta: Nulo");
-	}else{
-		console.log("Estado de la cuenta: Acreedor")
-	}
-}
+	var nombreCliente= "";
+	var numCta= 0;
+	var saldoActual= 0;
+	var estado= "Nulo";
+	var myArray = new Array(3); 
+		for ( i = 0; i < 3; i++) {
+			myArray[i]= new Array(3);
+		}
+	var nombres=new Array;
+	var cuentas=new Array;
+	var saldos=new Array;
+	
+	myArray[0]= cuentas;
+	myArray[1]="";
 
-var nombres=new Array;
-var cuentas=new Array;
-var saldos=new Array;
+	cuentas = [numCta, nombreCliente, saldoActual, estado];
+	cuentas.push([numCta, nombreCliente, saldoActual, estado]);
 
-do{
-	nombreCliente= prompt("Introduce el nombre del cliente: ");
-	numCta= prompt("Introduce el numero de la cuenta: ");
-	saldoActual= prompt("Introduce el saldo: ");
-	cuentas.push(cuentas);
 	nombres.push(nombreCliente);
 	saldos.push(saldoActual);
-}while(saldoActual < 0);
-nombres.pop();
-cuentas.pop();
-saldos.pop();
+
+do{
+	
+	numCta= prompt("Introduce el numero de la cuenta: ");
+	nombreCliente= prompt("Introduce el nombre del cliente: ");
+	saldoActual= prompt("Introduce el saldo: ");
+	numCta++; 
+}while();
+
+
 
 for (var i= 0; i < nombres.length; i++) {
 		document.write(nombres[i]+"<br>");
@@ -59,3 +61,7 @@ for (var i= 0; i < saldos.length; i++) {
 	}
 		document.write(saldos[i]+"<br>");
 	}
+
+
+	
+
