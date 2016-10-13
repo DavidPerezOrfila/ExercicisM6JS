@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+</head>
+<body>
+<script language="JavaScript"> 
+function cambiarColor()
+{
+     document.form1.text1.value = document.form1.select1.selectedIndex; 
+  document.form1.text2.value = 
+     document.form1.select1.options[document.form1.select1.selectedIndex].text;
+  document.form1.text3.value = 
+     document.form1.select1.options [document.form1.select1.selectedIndex].value; 
+     document.body.style.backgroundColor= document.form1.select1.options [document.form1.select1.selectedIndex].value; 
+    
+}
+function decirColor()
+{
+	alert("El color es " + document.form1.select1.options[document.form1.select1.selectedIndex].text);
+}
+</script>
+<form name="form1">
+
+<select size="1" name="select1" ONCHANGE="cambiarColor()">
+<option value="#DF0101">Rojo</option>
+<option value="#088A08">Verde</option>
+<option value="#0101DF">Azul</option>
+</select></p>
+<br>
+Número de índice seleccionado del objeto SELECT:<input type="text" name="text1"><br>
+Texto seleccionado:<input onBlur="decirColor()" type="text" name="text2"><br>
+Valor asociado:<input type="text" name="text3"><br>
+</form>
+</body>
+</html>

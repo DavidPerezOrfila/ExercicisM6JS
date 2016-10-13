@@ -1,0 +1,39 @@
+<!--PROBLEMAS
+
+Confeccionar una página que muestre tres checkbox que permitan seleccionar los deportes que practica el usuario (Futbol, Basket, Tennis) Mostrar al presionar un botón los deportes que a elegido.-->
+<html>
+<head>
+</head>
+<body>
+<script language="JavaScript"> 
+function Deportes()
+{
+  
+  var sport ="";
+  
+  if (document.form1.deporte1.checked)
+    sport +=document.form1.deporte1.value + ", ";
+    
+  if (document.form1.deporte2.checked)
+    sport +=document.form1.deporte2.value + ", ";
+    
+  if (document.form1.deporte3.checked)
+    sport +=document.form1.deporte3.value + " ";
+    
+  var ventana =window.open();
+  ventana.document.write("Practicas " + sport + ".");
+  
+}
+  
+</script>
+<form name="form1">
+<input type="checkbox" name="deporte1" value= "Futbol">Futbol
+<br>
+<input type="checkbox" name="deporte2" value= "Basket">Basket
+<br>
+<input type="checkbox" name="deporte3" value= "Tenis">Tenis
+<br>
+<input type="button" value="Mostrar" onClick="Deportes()">
+</form>
+</body>
+</html>
