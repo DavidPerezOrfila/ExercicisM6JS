@@ -1,0 +1,27 @@
+<!--/*FORMULARIO TEXTBOXT PARA INTRODUCIR 4 NOMBRES QUE SE VAN A GUARDAR EN UN ARRAY NOMBRES. DESPUES HAY UN BOTON QUE CON UN FOR EACH 
+LO IMPRIMIMOS EN ROJO*/-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio ForEach</title>
+	<script type="text/javascript" src='ExForEach.js'></script>
+</head>
+<body>
+	<form name="textboxes">
+		<p>Introduce un nombre: </p>
+			<input type="textbox" name="primerNombre"><br>
+		<p>Introduce un nombre: </p>
+			<input type="textbox" name="segundoNombre"><br>
+		<p>Introduce un nombre: </p>
+			<input type="textbox" name="tercerNombre"><br>
+		<p>Introduce un nombre: </p>
+			<input type="textbox" name="cuartoNombre"><br><br>
+			<input type="button" value="Imprimir" onclick="guardarNombres(), nombres.forEach(redNames)"><br><br>
+			<!--input type="text" rows="5" style="width:200px; height:50px;" name="Text1" id="Text1" value="" /-->
+
+	</form>
+	<p id="text1"></p>	
+</body>
+</html>

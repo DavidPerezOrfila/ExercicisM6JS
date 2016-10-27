@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rectangulo JS</title>
+	<script type="text/javascript">
+	
+
+	function Rectangulo(lado1, lado2){
+		this.lado1= lado1;
+		this.lado2= lado2;
+		this.area= area;
+		this.perimetro= perimetro;
+	}
+
+	function area(){
+
+		var a= this.lado1*this.lado2;
+		return a;
+
+	}
+
+	function perimetro(){
+		var p= 2*(this.lado1+this.lado2);
+		return p;
+	}
+
+	var R1 = new Rectangulo(5, 7);
+	
+	document.write(R1.area() + '<br>' + R1.perimetro() + '<br>');
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
