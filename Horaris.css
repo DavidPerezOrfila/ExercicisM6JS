@@ -1,0 +1,73 @@
+body{
+
+	background-color:#4281a4;
+
+}
+
+table, th, td {
+
+    border-width:5px;	
+    border-style:inset;
+    border-collapse: collapse;
+    
+}
+
+
+.Capcelera{
+
+	background-color:#9cafb7;
+	font-size: 20px;
+	font-family: Garamond;
+
+}
+
+.Mati{
+
+	background-color:#ead2ac;
+	font-size: 20px;
+	font-family: monospace;
+	
+}
+
+.Tarda{
+
+	background-color:#e6b89c;
+	font-size: 20px;
+	font-family: monospace;
+
+}
+
+.Complert{
+
+	background-color: #fe938c;
+	font-size: 20px;
+	font-family: monospace;
+}
+
+th, td {
+    
+    text-align: center;    
+    width: 250px;
+    height: 50px;
+    
+}
+
+#clean {
+
+   width: 20em;  height: 2em;
+   text-align: center;
+
+}
+
+p{
+
+	text-align: center;
+
+}
+
+iframe{
+
+	display: none;
+	visibility: hidden;
+	
+}
